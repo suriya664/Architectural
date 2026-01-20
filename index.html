@@ -1,0 +1,559 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Architectural Visualization Studio | Home</title>
+    <link rel="icon" href="assets/icons/favicon.ico">
+    <meta name="description" content="Premium architectural visualization studio delivering photorealistic renders, animations, and immersive experiences.">
+    <meta name="keywords" content="architectural visualization, 3D rendering, animation, VR, interior rendering">
+    <meta property="og:title" content="Architectural Visualization Studio">
+    <meta property="og:description" content="Collaborate on design, showcase projects, and deliver premium architectural visuals.">
+    <meta property="og:image" content="images/hero/hero-1.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link id="bootstrapCss" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/magnific-popup.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link id="rtlStylesheet" rel="stylesheet" href="css/style-rtl.css" disabled>
+    <link rel="stylesheet" href="css/dark-mode.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Architectural Visualization Studio",
+        "url": "https://example.com",
+        "logo": "https://example.com/assets/icons/logo.png",
+        "sameAs": ["https://www.linkedin.com", "https://www.behance.net"]
+      }
+    </script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top nav-glass">
+      <div class="container">
+        <a class="navbar-brand nav__logo" href="index.html">AV Studio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="mainNav">
+          <ul class="navbar-nav mb-2 mb-lg-0 align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Services</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="services.html">All Services</a></li>
+                <li><a class="dropdown-item" href="service-detail.html">3D Visualization</a></li>
+                <li><a class="dropdown-item" href="service-detail.html">Animation Walkthroughs</a></li>
+                <li><a class="dropdown-item" href="service-detail.html">VR Experiences</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="admin-dashboard.html">Dashboard</a></li>
+          </ul>
+          <div class="d-flex align-items-center gap-2 ms-lg-3">
+            <button id="langToggle" class="btn lang-toggle" type="button" aria-pressed="false">EN / AR</button>
+            <button id="themeToggle" class="btn theme-toggle" type="button" aria-pressed="false">
+              <i class="bi bi-moon-stars"></i>
+            </button>
+            <a class="btn btn-primary" href="login.html">Login</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div class="hero__media" style="background-image: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1600&q=80');"></div>
+      <div class="hero__overlay"></div>
+      <div class="container hero__content">
+        <div class="row align-items-center">
+          <div class="col-lg-7">
+            <span class="hero__badge mb-3"><i class="bi bi-stars"></i> Award-winning visualization studio</span>
+            <h1 class="hero__title mb-3">Design smarter with immersive architectural visuals.</h1>
+            <p class="lead mb-4">Transform concepts into photorealistic experiences. Collaborate with our studio to deliver faster approvals and stunning presentations.</p>
+            <div class="d-flex flex-wrap gap-3">
+              <a href="services.html" class="btn btn-primary btn-lg">Explore Services</a>
+              <a href="#portfolio" class="btn btn-outline btn-lg text-white border-white">View Portfolio</a>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="hero__stats mt-4 mt-lg-0">
+              <div class="row text-center g-4">
+                <div class="col-6">
+                  <h3 class="mb-0" data-count="320">0</h3>
+                  <small class="text-white-50">Projects delivered</small>
+                </div>
+                <div class="col-6">
+                  <h3 class="mb-0" data-count="180">0</h3>
+                  <small class="text-white-50">Global clients</small>
+                </div>
+                <div class="col-6">
+                  <h3 class="mb-0" data-count="12">0</h3>
+                  <small class="text-white-50">Years in studio</small>
+                </div>
+                <div class="col-6">
+                  <h3 class="mb-0" data-count="24">0</h3>
+                  <small class="text-white-50">Design awards</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="section-padding" id="about">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6" data-aos="fade-right">
+            <img class="img-fluid rounded-4 shadow" src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1200&q=80" alt="Studio preview" loading="lazy">
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <span class="badge-soft mb-3">Studio Overview</span>
+            <h2 class="mb-3">Delivering cinematic visuals for visionary teams.</h2>
+            <p class="text-muted-custom mb-4">We help architects, developers, and agencies communicate design intent through high-end rendering, animation walkthroughs, and immersive VR experiences.</p>
+            <ul class="list-unstyled mb-4">
+              <li class="mb-2"><i class="bi bi-check-circle text-primary me-2"></i>Dedicated project managers and agile workflows</li>
+              <li class="mb-2"><i class="bi bi-check-circle text-primary me-2"></i>Photorealistic lighting, materials, and environments</li>
+              <li class="mb-2"><i class="bi bi-check-circle text-primary me-2"></i>Collaborative feedback portal and revisions</li>
+            </ul>
+            <a href="about.html" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding bg-surface">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="badge-soft">Services</span>
+          <h2 class="mt-2">Full-spectrum visualization services</h2>
+          <p class="text-muted-custom">From early concept to final marketing assets, our team supports every stage.</p>
+        </div>
+        <div class="row g-4 services-grid">
+          <div class="col-md-6 col-lg-4 grid-item" data-aos="fade-up">
+            <div class="card-surface service-card h-100">
+              <div class="service-icon mb-3"><i class="bi bi-building"></i></div>
+              <h5>3D Architectural Visualization</h5>
+              <p class="text-muted-custom">Photorealistic renders for exterior and interior concepts.</p>
+              <a href="service-detail.html" class="btn btn-outline btn-sm">Learn More</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 grid-item" data-aos="fade-up" data-aos-delay="50">
+            <div class="card-surface service-card h-100">
+              <div class="service-icon mb-3"><i class="bi bi-house-heart"></i></div>
+              <h5>Interior Design Rendering</h5>
+              <p class="text-muted-custom">Stylized interiors with lifelike lighting and materials.</p>
+              <a href="service-detail.html" class="btn btn-outline btn-sm">Learn More</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 grid-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-surface service-card h-100">
+              <div class="service-icon mb-3"><i class="bi bi-camera-reels"></i></div>
+              <h5>Animation Walkthroughs</h5>
+              <p class="text-muted-custom">Cinematic walkthroughs and flythroughs for marketing.</p>
+              <a href="service-detail.html" class="btn btn-outline btn-sm">Learn More</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 grid-item" data-aos="fade-up" data-aos-delay="150">
+            <div class="card-surface service-card h-100">
+              <div class="service-icon mb-3"><i class="bi bi-vr"></i></div>
+              <h5>VR Experience Development</h5>
+              <p class="text-muted-custom">Immersive environments for stakeholder engagement.</p>
+              <a href="service-detail.html" class="btn btn-outline btn-sm">Learn More</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 grid-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-surface service-card h-100">
+              <div class="service-icon mb-3"><i class="bi bi-arrow-repeat"></i></div>
+              <h5>360° Virtual Tours</h5>
+              <p class="text-muted-custom">Interactive tours for real estate and hospitality.</p>
+              <a href="service-detail.html" class="btn btn-outline btn-sm">Learn More</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 grid-item" data-aos="fade-up" data-aos-delay="250">
+            <div class="card-surface service-card h-100">
+              <div class="service-icon mb-3"><i class="bi bi-layers"></i></div>
+              <h5>Post-Production Services</h5>
+              <p class="text-muted-custom">Color grading, compositing, and atmospheric effects.</p>
+              <a href="service-detail.html" class="btn btn-outline btn-sm">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding" id="stats">
+      <div class="container">
+        <div class="row g-4 text-center">
+          <div class="col-md-3">
+            <div class="stats-card">
+              <h3 data-count="45">0</h3>
+              <p class="mb-0 text-muted-custom">Studio specialists</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="stats-card">
+              <h3 data-count="92">0</h3>
+              <p class="mb-0 text-muted-custom">Repeat clients</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="stats-card">
+              <h3 data-count="28">0</h3>
+              <p class="mb-0 text-muted-custom">Markets served</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="stats-card">
+              <h3 data-count="16">0</h3>
+              <p class="mb-0 text-muted-custom">Innovation awards</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding bg-surface" id="portfolio">
+      <div class="container">
+        <div class="d-flex flex-wrap justify-content-between align-items-center mb-4">
+          <div>
+            <span class="badge-soft">Portfolio</span>
+            <h2 class="mt-2">Featured projects</h2>
+          </div>
+          <div class="btn-group">
+            <button class="btn btn-outline filter-btn active" data-filter="*">All</button>
+            <button class="btn btn-outline filter-btn" data-filter=".interior">Interior</button>
+            <button class="btn btn-outline filter-btn" data-filter=".exterior">Exterior</button>
+          </div>
+        </div>
+        <div class="row g-4 portfolio-grid">
+          <div class="col-md-6 col-lg-4 grid-item interior">
+            <div class="portfolio-item">
+              <a class="portfolio-lightbox" href="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1600&q=80">
+                <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80" alt="Interior render" loading="lazy">
+                <div class="portfolio-overlay">
+                  <div>
+                    <h5>Skyline Residence</h5>
+                    <p class="mb-0">Interior visualization</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 grid-item exterior">
+            <div class="portfolio-item">
+              <a class="portfolio-lightbox" href="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1600&q=80">
+                <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=800&q=80" alt="Exterior render" loading="lazy">
+                <div class="portfolio-overlay">
+                  <div>
+                    <h5>Urban Heights</h5>
+                    <p class="mb-0">Exterior visualization</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 grid-item interior">
+            <div class="portfolio-item">
+              <a class="portfolio-lightbox" href="https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=1600&q=80">
+                <img src="https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=800&q=80" alt="Interior render" loading="lazy">
+                <div class="portfolio-overlay">
+                  <div>
+                    <h5>Modern Atrium</h5>
+                    <p class="mb-0">Hospitality suite</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 grid-item exterior">
+            <div class="portfolio-item">
+              <a class="portfolio-lightbox" href="https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?auto=format&fit=crop&w=1600&q=80">
+                <img src="https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?auto=format&fit=crop&w=800&q=80" alt="Exterior render" loading="lazy">
+                <div class="portfolio-overlay">
+                  <div>
+                    <h5>Coastal Pavilion</h5>
+                    <p class="mb-0">Exterior visualization</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 grid-item interior">
+            <div class="portfolio-item">
+              <a class="portfolio-lightbox" href="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1600&q=80">
+                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" alt="Interior render" loading="lazy">
+                <div class="portfolio-overlay">
+                  <div>
+                    <h5>Vista Loft</h5>
+                    <p class="mb-0">Interior visualization</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 grid-item exterior">
+            <div class="portfolio-item">
+              <a class="portfolio-lightbox" href="https://images.unsplash.com/photo-1501183638710-841dd1904471?auto=format&fit=crop&w=1600&q=80">
+                <img src="https://images.unsplash.com/photo-1501183638710-841dd1904471?auto=format&fit=crop&w=800&q=80" alt="Exterior render" loading="lazy">
+                <div class="portfolio-overlay">
+                  <div>
+                    <h5>Summit Plaza</h5>
+                    <p class="mb-0">Exterior visualization</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="badge-soft">Testimonials</span>
+          <h2 class="mt-2">Trusted by forward-thinking teams</h2>
+          <p class="text-muted-custom">Real feedback from partners who rely on our visualization workflows.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="testimonial-card testimonial-card--split h-100">
+              <div class="testimonial-quote"><i class="bi bi-quote"></i></div>
+              <div class="d-flex gap-2 mb-3">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+              </div>
+              <p class="mb-4">“The visuals helped us secure approvals weeks earlier. The team was responsive and creative.”</p>
+              <div class="d-flex align-items-center gap-3">
+                <img class="rounded-circle" src="https://i.pravatar.cc/200?img=12" alt="Client" loading="lazy">
+                <div>
+                  <strong>Jordan Lee</strong>
+                  <div class="text-muted-custom small">Design Director, ArcLab</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="testimonial-card testimonial-card--split h-100">
+              <div class="testimonial-quote"><i class="bi bi-quote"></i></div>
+              <div class="d-flex gap-2 mb-3">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+              </div>
+              <p class="mb-4">“Every deliverable was on point. Our marketing campaign doubled engagement.”</p>
+              <div class="d-flex align-items-center gap-3">
+                <img class="rounded-circle" src="https://i.pravatar.cc/200?img=32" alt="Client" loading="lazy">
+                <div>
+                  <strong>Amira Khan</strong>
+                  <div class="text-muted-custom small">Marketing Lead, Northbuild</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="testimonial-card testimonial-card--split h-100">
+              <div class="testimonial-quote"><i class="bi bi-quote"></i></div>
+              <div class="d-flex gap-2 mb-3">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+              </div>
+              <p class="mb-4">“Immersive VR walkthroughs made stakeholder feedback incredibly clear.”</p>
+              <div class="d-flex align-items-center gap-3">
+                <img class="rounded-circle" src="https://i.pravatar.cc/200?img=5" alt="Client" loading="lazy">
+                <div>
+                  <strong>Oliver Smith</strong>
+                  <div class="text-muted-custom small">Developer, BuildCo</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="testimonial-card testimonial-card--split h-100">
+              <div class="testimonial-quote"><i class="bi bi-quote"></i></div>
+              <div class="d-flex gap-2 mb-3">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+              </div>
+              <p class="mb-4">“Their team made the design story easy to understand for investors.”</p>
+              <div class="d-flex align-items-center gap-3">
+                <img class="rounded-circle" src="https://i.pravatar.cc/200?img=18" alt="Client" loading="lazy">
+                <div>
+                  <strong>Laura Chen</strong>
+                  <div class="text-muted-custom small">Partner, Meridian Capital</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding bg-surface">
+      <div class="container">
+        <div class="cta-banner text-center">
+          <h2 class="mb-3">Ready to elevate your next project?</h2>
+          <p class="mb-4">Book a strategy session with our visualization team today.</p>
+          <a href="contact.html" class="btn btn-light btn-lg">Start a Project</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding">
+      <div class="container">
+        <div class="d-flex flex-wrap justify-content-between align-items-center mb-4">
+          <div>
+            <span class="badge-soft">Insights</span>
+            <h2 class="mt-2">Latest from the studio</h2>
+          </div>
+          <a href="blog.html" class="btn btn-outline">View all posts</a>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card-surface h-100 blog-card">
+              <img class="img-fluid rounded-top" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80" alt="Blog post" loading="lazy">
+              <div class="p-4">
+                <span class="badge-soft">Workflow</span>
+                <h5 class="mt-2">Streamlining approvals with interactive visuals</h5>
+                <p class="text-muted-custom">Discover how collaborative reviews save time and budget.</p>
+                <div class="small text-muted-custom">Jan 10, 2026 · 5 min read</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-surface h-100 blog-card">
+              <img class="img-fluid rounded-top" src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" alt="Blog post" loading="lazy">
+              <div class="p-4">
+                <span class="badge-soft">Technology</span>
+                <h5 class="mt-2">Choosing the right VR format for stakeholders</h5>
+                <p class="text-muted-custom">A quick guide to immersive presentations.</p>
+                <div class="small text-muted-custom">Jan 05, 2026 · 6 min read</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-surface h-100 blog-card">
+              <img class="img-fluid rounded-top" src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80" alt="Blog post" loading="lazy">
+              <div class="p-4">
+                <span class="badge-soft">Lighting</span>
+                <h5 class="mt-2">Golden hour renders that sell the vision</h5>
+                <p class="text-muted-custom">Lighting tips for impactful marketing visuals.</p>
+                <div class="small text-muted-custom">Dec 22, 2025 · 4 min read</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding bg-surface">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6">
+            <h3>Subscribe for studio updates</h3>
+            <p class="text-muted-custom">Monthly insights on visualization trends, workflows, and case studies.</p>
+          </div>
+          <div class="col-lg-6">
+            <form class="d-flex flex-column flex-sm-row gap-3 toast-trigger needs-validation" novalidate>
+              <input class="form-control" type="email" placeholder="Email address" required>
+              <button class="btn btn-primary" type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer section-padding">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-3">
+            <h4 class="footer__title">AV Studio</h4>
+            <p class="text-muted-custom">Premium architectural visualization and immersive experiences for visionary teams.</p>
+          </div>
+          <div class="col-lg-3">
+            <h5 class="footer__title">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <h5 class="footer__title">Services</h5>
+            <ul class="list-unstyled">
+              <li><a href="service-detail.html">3D Visualization</a></li>
+              <li><a href="service-detail.html">Animation</a></li>
+              <li><a href="service-detail.html">VR Experiences</a></li>
+              <li><a href="service-detail.html">Virtual Tours</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <h5 class="footer__title">Contact</h5>
+            <p class="text-muted-custom mb-1">hello@avstudio.com</p>
+            <p class="text-muted-custom mb-3">+1 (212) 555-2030</p>
+            <div class="d-flex gap-3">
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-behance"></i></a>
+            </div>
+          </div>
+        </div>
+        <hr class="my-4">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+          <small class="text-muted-custom">© 2026 AV Studio. All rights reserved.</small>
+          <form class="d-flex gap-2 mt-3 mt-md-0 toast-trigger needs-validation" novalidate>
+            <input class="form-control" type="email" placeholder="Newsletter email" required>
+            <button class="btn btn-outline" type="submit">Join</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <button class="btn btn-primary back-to-top" type="button"><i class="bi bi-arrow-up"></i></button>
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div id="formToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <strong class="me-auto">AV Studio</strong>
+          <small>Just now</small>
+          <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+        </div>
+        <div class="toast-body">Thanks! We'll be in touch shortly.</div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js"></script>
+    <script src="js/theme-switcher.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/form-validation.js" defer></script>
+  </body>
+</html>
+

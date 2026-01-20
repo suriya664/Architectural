@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Service Detail | AV Studio</title>
+    <link rel="icon" href="assets/icons/favicon.ico">
+    <meta name="description" content="Detailed service overview for architectural visualization.">
+    <meta name="keywords" content="3D visualization, architectural rendering, pricing">
+    <meta property="og:title" content="Service Detail | AV Studio">
+    <meta property="og:description" content="Explore service features, process, pricing, and FAQs.">
+    <meta property="og:image" content="images/services/service-detail.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link id="bootstrapCss" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link id="rtlStylesheet" rel="stylesheet" href="css/style-rtl.css" disabled>
+    <link rel="stylesheet" href="css/dark-mode.css">
+    <link rel="stylesheet" href="css/responsive.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top nav-glass">
+      <div class="container">
+        <a class="navbar-brand nav__logo" href="index.html">AV Studio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="mainNav">
+          <ul class="navbar-nav mb-2 mb-lg-0 align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">Services</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="services.html">All Services</a></li>
+                <li><a class="dropdown-item" href="service-detail.html">3D Visualization</a></li>
+                <li><a class="dropdown-item" href="service-detail.html">Animation Walkthroughs</a></li>
+                <li><a class="dropdown-item" href="service-detail.html">VR Experiences</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="admin-dashboard.html">Dashboard</a></li>
+          </ul>
+          <div class="d-flex align-items-center gap-2 ms-lg-3">
+            <button id="langToggle" class="btn lang-toggle" type="button" aria-pressed="false">EN / AR</button>
+            <button id="themeToggle" class="btn theme-toggle" type="button" aria-pressed="false">
+              <i class="bi bi-moon-stars"></i>
+            </button>
+            <a class="btn btn-primary" href="login.html">Login</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header class="section-padding bg-surface mt-5">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="services.html">Services</a></li>
+            <li class="breadcrumb-item active" aria-current="page">3D Visualization</li>
+          </ol>
+        </nav>
+        <h1>3D Architectural Visualization</h1>
+        <p class="text-muted-custom">Photorealistic renders that align stakeholders and drive sales.</p>
+      </div>
+    </header>
+
+    <section class="section-padding">
+      <div class="container">
+        <img class="img-fluid rounded-4 shadow mb-5" src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1400&q=80" alt="Service hero" loading="lazy">
+        <div class="row g-5">
+          <div class="col-lg-8">
+            <h2>Service Overview</h2>
+            <p class="text-muted-custom">Our visualization workflow combines accurate modeling, cinematic lighting, and narrative storytelling to convey design intent with clarity.</p>
+            <h4 class="mt-4">Key Features</h4>
+            <ul class="list-unstyled">
+              <li class="mb-2"><i class="bi bi-check-circle text-primary me-2"></i>High-resolution stills and marketing visuals</li>
+              <li class="mb-2"><i class="bi bi-check-circle text-primary me-2"></i>Material and lighting studies</li>
+              <li class="mb-2"><i class="bi bi-check-circle text-primary me-2"></i>Collaborative feedback rounds</li>
+            </ul>
+
+            <h4 class="mt-5">Process Workflow</h4>
+            <ol class="list-group list-group-numbered mb-4">
+              <li class="list-group-item">Discovery and asset collection</li>
+              <li class="list-group-item">Blocking and camera framing</li>
+              <li class="list-group-item">Lighting, materials, and refinement</li>
+              <li class="list-group-item">Review cycle and final delivery</li>
+            </ol>
+
+            <h4 class="mt-5">Pricing Packages</h4>
+            <div class="table-responsive mb-4">
+              <table class="table align-middle">
+                <thead>
+                  <tr>
+                    <th>Package</th>
+                    <th>Includes</th>
+                    <th>Timeline</th>
+                    <th>Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Basic</td>
+                    <td>2 images, 1 revision</td>
+                    <td>7 days</td>
+                    <td>$1,200</td>
+                  </tr>
+                  <tr>
+                    <td>Standard</td>
+                    <td>5 images, 2 revisions</td>
+                    <td>10 days</td>
+                    <td>$2,800</td>
+                  </tr>
+                  <tr>
+                    <td>Premium</td>
+                    <td>10 images, 3 revisions</td>
+                    <td>14 days</td>
+                    <td>$4,500</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h4 class="mt-5">FAQs</h4>
+            <div class="accordion" id="serviceFaq">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq1">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqBody1">What files do you need to start?</button>
+                </h2>
+                <div id="faqBody1" class="accordion-collapse collapse show" data-bs-parent="#serviceFaq">
+                  <div class="accordion-body">CAD files, material references, and design intent notes.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq2">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqBody2">How many revisions are included?</button>
+                </h2>
+                <div id="faqBody2" class="accordion-collapse collapse" data-bs-parent="#serviceFaq">
+                  <div class="accordion-body">Each package includes 1-3 revision rounds depending on tier.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq3">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqBody3">Can you meet tight deadlines?</button>
+                </h2>
+                <div id="faqBody3" class="accordion-collapse collapse" data-bs-parent="#serviceFaq">
+                  <div class="accordion-body">Rush timelines are available with priority scheduling.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq4">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqBody4">Do you provide animation add-ons?</button>
+                </h2>
+                <div id="faqBody4" class="accordion-collapse collapse" data-bs-parent="#serviceFaq">
+                  <div class="accordion-body">Yes, animations can be bundled with your project.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq5">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqBody5">Is VR included in standard packages?</button>
+                </h2>
+                <div id="faqBody5" class="accordion-collapse collapse" data-bs-parent="#serviceFaq">
+                  <div class="accordion-body">VR experiences are offered as add-on services.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq6">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqBody6">How do you handle feedback?</button>
+                </h2>
+                <div id="faqBody6" class="accordion-collapse collapse" data-bs-parent="#serviceFaq">
+                  <div class="accordion-body">We use a client portal for structured feedback and approvals.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq7">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqBody7">Can you match our branding?</button>
+                </h2>
+                <div id="faqBody7" class="accordion-collapse collapse" data-bs-parent="#serviceFaq">
+                  <div class="accordion-body">Absolutely. We align visuals with brand guidelines.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq8">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqBody8">What if we need more revisions?</button>
+                </h2>
+                <div id="faqBody8" class="accordion-collapse collapse" data-bs-parent="#serviceFaq">
+                  <div class="accordion-body">Additional revisions can be added per scope.</div>
+                </div>
+              </div>
+            </div>
+
+            <h4 class="mt-5">Related Projects</h4>
+            <div class="row g-4">
+              <div class="col-md-6">
+                <div class="portfolio-item">
+                  <img src="https://images.unsplash.com/photo-1502005097973-6a7082348e28?auto=format&fit=crop&w=800&q=80" alt="Related project" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div>
+                      <h6>Riverside Villas</h6>
+                      <small>Exterior rendering</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="portfolio-item">
+                  <img src="https://images.unsplash.com/photo-1501183638710-841dd1904471?auto=format&fit=crop&w=800&q=80" alt="Related project" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div>
+                      <h6>Skyline Offices</h6>
+                      <small>Interior rendering</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h4 class="mt-5">Inquiry Form</h4>
+            <form class="row g-3 needs-validation validate-form" novalidate>
+              <div class="col-md-6">
+                <input class="form-control" type="text" placeholder="Full name" required>
+              </div>
+              <div class="col-md-6">
+                <input class="form-control" type="email" placeholder="Email address" required>
+              </div>
+              <div class="col-md-6">
+                <input class="form-control" type="text" placeholder="Project type" required>
+              </div>
+              <div class="col-md-6">
+                <input class="form-control" type="text" placeholder="Estimated timeline" required>
+              </div>
+              <div class="col-12">
+                <textarea class="form-control" rows="4" placeholder="Tell us about your project" required></textarea>
+              </div>
+              <div class="col-12">
+                <button class="btn btn-primary" type="submit">Submit Inquiry</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="card-surface p-4 mb-4">
+              <h5>All Services</h5>
+              <ul class="list-unstyled">
+                <li><a href="service-detail.html">3D Visualization</a></li>
+                <li><a href="service-detail.html">Interior Rendering</a></li>
+                <li><a href="service-detail.html">Exterior Rendering</a></li>
+                <li><a href="service-detail.html">360° Virtual Tours</a></li>
+                <li><a href="service-detail.html">Animation Walkthroughs</a></li>
+                <li><a href="service-detail.html">VR Experiences</a></li>
+              </ul>
+              <button class="btn btn-outline w-100 mt-3">Download Brochure</button>
+            </div>
+            <div class="card-surface p-4 mb-4">
+              <h5>Contact Info</h5>
+              <p class="text-muted-custom mb-1">hello@avstudio.com</p>
+              <p class="text-muted-custom mb-3">+1 (212) 555-2030</p>
+              <small class="text-muted-custom">Mon - Fri, 9am - 6pm</small>
+            </div>
+            <div class="card-surface p-4">
+              <h5>Quick Quote</h5>
+              <form class="row g-3 needs-validation validate-form" novalidate>
+                <div class="col-12">
+                  <input class="form-control" type="text" placeholder="Project name" required>
+                </div>
+                <div class="col-12">
+                  <input class="form-control" type="email" placeholder="Email" required>
+                </div>
+                <div class="col-12">
+                  <select class="form-select" required>
+                    <option value="" selected disabled>Service interest</option>
+                    <option>3D Visualization</option>
+                    <option>Animation</option>
+                    <option>VR Tours</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary w-100" type="submit">Get Quote</button>
+                </div>
+              </form>
+            </div>
+            <div class="card-surface p-4 mt-4">
+              <h5>Download Assets</h5>
+              <p class="text-muted-custom">Grab the service brief and pricing guide.</p>
+              <button class="btn btn-outline w-100">Download PDF</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer section-padding">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-3">
+            <h4 class="footer__title">AV Studio</h4>
+            <p class="text-muted-custom">Premium architectural visualization services.</p>
+          </div>
+          <div class="col-lg-3">
+            <h5 class="footer__title">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="services.html">Services</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <h5 class="footer__title">Services</h5>
+            <ul class="list-unstyled">
+              <li>3D Visualization</li>
+              <li>Animation Walkthroughs</li>
+              <li>VR Experiences</li>
+              <li>Virtual Tours</li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <h5 class="footer__title">Contact</h5>
+            <p class="text-muted-custom mb-1">hello@avstudio.com</p>
+            <p class="text-muted-custom mb-0">+1 (212) 555-2030</p>
+          </div>
+        </div>
+        <hr class="my-4">
+        <small class="text-muted-custom">© 2026 AV Studio. All rights reserved.</small>
+      </div>
+    </footer>
+
+    <button class="btn btn-primary back-to-top" type="button"><i class="bi bi-arrow-up"></i></button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script src="js/theme-switcher.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/form-validation.js" defer></script>
+  </body>
+</html>
+

@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin Dashboard | AV Studio</title>
+    <link rel="icon" href="assets/icons/favicon.ico">
+    <meta name="description" content="Admin dashboard for project and client management.">
+    <meta name="keywords" content="admin dashboard, project management">
+    <meta property="og:title" content="AV Studio Admin Dashboard">
+    <meta property="og:description" content="Analytics, projects, and client management.">
+    <meta property="og:image" content="images/hero/dashboard.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link id="bootstrapCss" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/datatables.net-bs5@1.13.8/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link id="rtlStylesheet" rel="stylesheet" href="css/style-rtl.css" disabled>
+    <link rel="stylesheet" href="css/dark-mode.css">
+    <link rel="stylesheet" href="css/responsive.css">
+  </head>
+  <body>
+    <div class="d-flex">
+      <aside class="admin-sidebar p-4">
+        <h4 class="mb-4">AV Admin</h4>
+        <nav class="nav flex-column gap-2">
+          <a class="nav-link active" href="#">Dashboard</a>
+          <a class="nav-link" href="#">Projects</a>
+          <a class="nav-link" href="#">Clients</a>
+          <a class="nav-link" href="#">Orders</a>
+          <a class="nav-link" href="#">Messages</a>
+          <a class="nav-link" href="#">Analytics</a>
+          <a class="nav-link" href="#">Settings</a>
+        </nav>
+      </aside>
+      <main class="flex-grow-1 p-4">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h1>Dashboard</h1>
+        </div>
+
+        <div class="row g-4 mb-4">
+          <div class="col-md-3">
+            <div class="card-surface p-4">
+              <h6>Total Projects</h6>
+              <h3>128</h3>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card-surface p-4">
+              <h6>Revenue</h6>
+              <h3>$245K</h3>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card-surface p-4">
+              <h6>Clients</h6>
+              <h3>86</h3>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card-surface p-4">
+              <h6>Messages</h6>
+              <h3>42</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4 mb-4">
+          <div class="col-lg-8">
+            <div class="card-surface p-4">
+              <h5>Revenue Overview</h5>
+              <canvas id="revenueChart" height="120"></canvas>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card-surface p-4">
+              <h5>Projects by Status</h5>
+              <canvas id="statusChart" height="220"></canvas>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4 mb-4">
+          <div class="col-lg-8">
+            <div class="card-surface p-4">
+              <h5>Recent Orders</h5>
+              <div class="table-responsive">
+                <table class="table" id="ordersTable">
+                  <thead>
+                    <tr>
+                      <th>Order</th>
+                      <th>Client</th>
+                      <th>Status</th>
+                      <th>Amount</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>#AV-1024</td>
+                      <td>Skyline Group</td>
+                      <td>In Progress</td>
+                      <td>$8,200</td>
+                    </tr>
+                    <tr>
+                      <td>#AV-1023</td>
+                      <td>Urbanica</td>
+                      <td>Delivered</td>
+                      <td>$4,500</td>
+                    </tr>
+                    <tr>
+                      <td>#AV-1022</td>
+                      <td>Habitat Co.</td>
+                      <td>Review</td>
+                      <td>$3,800</td>
+                    </tr>
+                    <tr>
+                      <td>#AV-1021</td>
+                      <td>Northbuild</td>
+                      <td>On Hold</td>
+                      <td>$2,900</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card-surface p-4 mb-4">
+              <h5>Recent Messages</h5>
+              <ul class="list-unstyled">
+                <li class="mb-3">
+                  <strong>Amira Khan</strong>
+                  <div class="text-muted-custom small">Need revisions on Q4 renders.</div>
+                </li>
+                <li class="mb-3">
+                  <strong>James Park</strong>
+                  <div class="text-muted-custom small">Schedule meeting for VR review.</div>
+                </li>
+                <li class="mb-3">
+                  <strong>Maria Lopez</strong>
+                  <div class="text-muted-custom small">Approved final walkthrough.</div>
+                </li>
+              </ul>
+            </div>
+            <div class="card-surface p-4">
+              <h5>Quick Actions</h5>
+              <button class="btn btn-primary w-100 mb-2">Create Project</button>
+              <button class="btn btn-outline w-100 mb-2">Send Invoice</button>
+              <button class="btn btn-outline w-100">Add Client</button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/datatables.net@1.13.8/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/datatables.net-bs5@1.13.8/js/dataTables.bootstrap5.min.js"></script>
+    <script src="js/theme-switcher.js" defer></script>
+    <script src="js/dashboard.js" defer></script>
+  </body>
+</html>
+

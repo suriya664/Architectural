@@ -1,0 +1,66 @@
+/* Dark mode specific tweaks */
+[data-theme="dark"] .hero__overlay {
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.85), rgba(30, 41, 59, 0.85));
+}
+
+[data-theme="dark"] .card-surface,
+[data-theme="dark"] .testimonial-card,
+[data-theme="dark"] .pricing-card {
+  border-color: var(--border-medium);
+}
+
+[data-theme="dark"] .footer {
+  background: var(--bg-secondary);
+}
+
+[data-theme="dark"] .badge-soft {
+  background: rgba(96, 165, 250, 0.2);
+  color: var(--primary-400);
+}
+
+[data-theme="dark"] body,
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4,
+[data-theme="dark"] h5,
+[data-theme="dark"] h6,
+[data-theme="dark"] p,
+[data-theme="dark"] span,
+[data-theme="dark"] small,
+[data-theme="dark"] li,
+[data-theme="dark"] label,
+[data-theme="dark"] th,
+[data-theme="dark"] td {
+  color: #f1f5f9;
+}
+
+[data-theme="dark"] a {
+  color: #f1f5f9;
+}
+
+[data-theme="dark"] a:hover {
+  color: #e2e8f0;
+}
+
+[data-theme="dark"] .text-muted-custom,
+[data-theme="dark"] .text-muted {
+  color: #f1f5f9 !important;
+}
+
+[data-theme="dark"] .bg-white {
+  background: var(--bg-elevated) !important;
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .btn-outline {
+  color: var(--primary-400);
+  border-color: var(--primary-400);
+}
+
+[data-theme="dark"] .form-control,
+[data-theme="dark"] .form-select {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  border-color: var(--border-medium);
+}

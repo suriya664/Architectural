@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog | AV Studio</title>
+    <link rel="icon" href="assets/icons/favicon.ico">
+    <meta name="description" content="Insights on architectural visualization, rendering, and design workflows.">
+    <meta name="keywords" content="architectural visualization blog, 3D rendering tips">
+    <meta property="og:title" content="AV Studio Blog">
+    <meta property="og:description" content="Latest articles on visualization and design collaboration.">
+    <meta property="og:image" content="images/blog/blog-1.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link id="bootstrapCss" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link id="rtlStylesheet" rel="stylesheet" href="css/style-rtl.css" disabled>
+    <link rel="stylesheet" href="css/dark-mode.css">
+    <link rel="stylesheet" href="css/responsive.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top nav-glass">
+      <div class="container">
+        <a class="navbar-brand nav__logo" href="index.html">AV Studio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="mainNav">
+          <ul class="navbar-nav mb-2 mb-lg-0 align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Services</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="services.html">All Services</a></li>
+                <li><a class="dropdown-item" href="service-detail.html">3D Visualization</a></li>
+                <li><a class="dropdown-item" href="service-detail.html">Animation Walkthroughs</a></li>
+                <li><a class="dropdown-item" href="service-detail.html">VR Experiences</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="admin-dashboard.html">Dashboard</a></li>
+          </ul>
+          <div class="d-flex align-items-center gap-2 ms-lg-3">
+            <button id="langToggle" class="btn lang-toggle" type="button" aria-pressed="false">EN / AR</button>
+            <button id="themeToggle" class="btn theme-toggle" type="button" aria-pressed="false">
+              <i class="bi bi-moon-stars"></i>
+            </button>
+            <a class="btn btn-primary" href="login.html">Login</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header class="section-padding bg-surface mt-5">
+      <div class="container">
+        <h1>Studio Insights</h1>
+        <p class="text-muted-custom">News, trends, and project highlights from our team.</p>
+      </div>
+    </header>
+
+    <section class="section-padding">
+      <div class="container">
+        <div class="card-surface p-4 mb-5">
+          <div class="row g-4 align-items-center">
+            <div class="col-lg-7">
+              <span class="badge-soft">Featured</span>
+              <h2 class="mt-3">Designing visuals that win approvals</h2>
+              <p class="text-muted-custom">Learn how to align stakeholders with immersive previews and interactive feedback.</p>
+              <a href="blog-detail.html" class="btn btn-primary">Read Article</a>
+            </div>
+            <div class="col-lg-5">
+              <img class="img-fluid rounded-4" src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1000&q=80" alt="Featured post" loading="lazy">
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-5">
+          <div class="col-lg-8">
+            <div class="search-input mb-4">
+              <i class="bi bi-search"></i>
+              <input class="form-control" type="search" placeholder="Search articles...">
+            </div>
+            <div class="row g-4">
+              <div class="col-md-6">
+                <div class="card-surface h-100">
+                  <img class="img-fluid rounded-top" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80" alt="Blog" loading="lazy">
+                  <div class="p-4">
+                    <span class="badge-soft">Workflow</span>
+                    <h5 class="mt-2">Streamlined approvals with live reviews</h5>
+                    <p class="text-muted-custom">Shorten cycles by involving stakeholders early.</p>
+                    <div class="d-flex justify-content-between small text-muted-custom">
+                      <span>By Alex Rivera</span>
+                      <span>5 min read</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card-surface h-100">
+                  <img class="img-fluid rounded-top" src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80" alt="Blog" loading="lazy">
+                  <div class="p-4">
+                    <span class="badge-soft">Lighting</span>
+                    <h5 class="mt-2">Golden hour lighting for impact</h5>
+                    <p class="text-muted-custom">Use natural lighting to boost realism.</p>
+                    <div class="d-flex justify-content-between small text-muted-custom">
+                      <span>By Nina Patel</span>
+                      <span>4 min read</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card-surface h-100">
+                  <img class="img-fluid rounded-top" src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=800&q=80" alt="Blog" loading="lazy">
+                  <div class="p-4">
+                    <span class="badge-soft">Technology</span>
+                    <h5 class="mt-2">VR walkthroughs for stakeholder buy-in</h5>
+                    <p class="text-muted-custom">Immersive experiences reduce uncertainty.</p>
+                    <div class="d-flex justify-content-between small text-muted-custom">
+                      <span>By Jordan Lee</span>
+                      <span>7 min read</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card-surface h-100">
+                  <img class="img-fluid rounded-top" src="https://images.unsplash.com/photo-1501183638710-841dd1904471?auto=format&fit=crop&w=800&q=80" alt="Blog" loading="lazy">
+                  <div class="p-4">
+                    <span class="badge-soft">Process</span>
+                    <h5 class="mt-2">How to prepare assets for rendering</h5>
+                    <p class="text-muted-custom">Tips for clean CAD handoffs and notes.</p>
+                    <div class="d-flex justify-content-between small text-muted-custom">
+                      <span>By Sofia Nguyen</span>
+                      <span>6 min read</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card-surface h-100">
+                  <img class="img-fluid rounded-top" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80" alt="Blog" loading="lazy">
+                  <div class="p-4">
+                    <span class="badge-soft">Trends</span>
+                    <h5 class="mt-2">Design trends shaping 2026</h5>
+                    <p class="text-muted-custom">Materials, colors, and spatial storytelling.</p>
+                    <div class="d-flex justify-content-between small text-muted-custom">
+                      <span>By Emma Chen</span>
+                      <span>5 min read</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card-surface h-100">
+                  <img class="img-fluid rounded-top" src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" alt="Blog" loading="lazy">
+                  <div class="p-4">
+                    <span class="badge-soft">Case Study</span>
+                    <h5 class="mt-2">Launching a mixed-use development</h5>
+                    <p class="text-muted-custom">A multi-channel campaign success story.</p>
+                    <div class="d-flex justify-content-between small text-muted-custom">
+                      <span>By Marco Lee</span>
+                      <span>8 min read</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card-surface h-100">
+                  <img class="img-fluid rounded-top" src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80" alt="Blog" loading="lazy">
+                  <div class="p-4">
+                    <span class="badge-soft">Design</span>
+                    <h5 class="mt-2">The power of storytelling in visuals</h5>
+                    <p class="text-muted-custom">Narrative techniques for impactful imagery.</p>
+                    <div class="d-flex justify-content-between small text-muted-custom">
+                      <span>By Chris King</span>
+                      <span>6 min read</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card-surface h-100">
+                  <img class="img-fluid rounded-top" src="https://images.unsplash.com/photo-1501183638710-841dd1904471?auto=format&fit=crop&w=800&q=80" alt="Blog" loading="lazy">
+                  <div class="p-4">
+                    <span class="badge-soft">Technology</span>
+                    <h5 class="mt-2">Choosing the right render engine</h5>
+                    <p class="text-muted-custom">A comparison of today’s leading tools.</p>
+                    <div class="d-flex justify-content-between small text-muted-custom">
+                      <span>By Ava Stone</span>
+                      <span>7 min read</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card-surface h-100">
+                  <img class="img-fluid rounded-top" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80" alt="Blog" loading="lazy">
+                  <div class="p-4">
+                    <span class="badge-soft">Strategy</span>
+                    <h5 class="mt-2">Positioning your project for investors</h5>
+                    <p class="text-muted-custom">Visual narratives that support funding rounds.</p>
+                    <div class="d-flex justify-content-between small text-muted-custom">
+                      <span>By Noah Reed</span>
+                      <span>5 min read</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card-surface h-100">
+                  <img class="img-fluid rounded-top" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80" alt="Blog" loading="lazy">
+                  <div class="p-4">
+                    <span class="badge-soft">Workflow</span>
+                    <h5 class="mt-2">Managing feedback across teams</h5>
+                    <p class="text-muted-custom">Keep approvals on track with structured review cycles.</p>
+                    <div class="d-flex justify-content-between small text-muted-custom">
+                      <span>By Lina Moore</span>
+                      <span>6 min read</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <nav class="mt-4">
+              <ul class="pagination">
+                <li class="page-item disabled"><span class="page-link">Previous</span></li>
+                <li class="page-item active"><span class="page-link">1</span></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <aside class="col-lg-4">
+            <div class="card-surface p-4 mb-4">
+              <h5>Search</h5>
+              <input class="form-control" type="search" placeholder="Search blog">
+            </div>
+            <div class="card-surface p-4 mb-4">
+              <h5>Categories</h5>
+              <ul class="list-unstyled">
+                <li>Workflow (6)</li>
+                <li>Lighting (4)</li>
+                <li>Technology (7)</li>
+                <li>Case Studies (3)</li>
+              </ul>
+            </div>
+            <div class="card-surface p-4 mb-4">
+              <h5>Recent Posts</h5>
+              <ul class="list-unstyled">
+                <li><a href="blog-detail.html">VR walkthroughs for stakeholder buy-in</a></li>
+                <li><a href="blog-detail.html">Golden hour lighting for impact</a></li>
+                <li><a href="blog-detail.html">Streamlined approvals with live reviews</a></li>
+              </ul>
+            </div>
+            <div class="card-surface p-4 mb-4">
+              <h5>Tags</h5>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge-soft">Rendering</span>
+                <span class="badge-soft">VR</span>
+                <span class="badge-soft">Lighting</span>
+                <span class="badge-soft">Process</span>
+              </div>
+            </div>
+            <div class="card-surface p-4">
+              <h5>Newsletter</h5>
+              <form class="toast-trigger needs-validation" novalidate>
+                <input class="form-control mb-3" type="email" placeholder="Email address" required>
+                <button class="btn btn-primary w-100" type="submit">Subscribe</button>
+              </form>
+            </div>
+            <div class="card-surface p-4 mt-4">
+              <h5>Follow Us</h5>
+              <div class="d-flex justify-content-center gap-3">
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-behance"></i></a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer section-padding">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-3">
+            <h4 class="footer__title">AV Studio</h4>
+            <p class="text-muted-custom">Premium architectural visualization studio.</p>
+          </div>
+          <div class="col-lg-3">
+            <h5 class="footer__title">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="services.html">Services</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <h5 class="footer__title">Services</h5>
+            <ul class="list-unstyled">
+              <li>3D Visualization</li>
+              <li>Animation Walkthroughs</li>
+              <li>VR Experiences</li>
+              <li>Virtual Tours</li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <h5 class="footer__title">Contact</h5>
+            <p class="text-muted-custom mb-1">hello@avstudio.com</p>
+            <p class="text-muted-custom mb-0">+1 (212) 555-2030</p>
+          </div>
+        </div>
+        <hr class="my-4">
+        <small class="text-muted-custom">© 2026 AV Studio. All rights reserved.</small>
+      </div>
+    </footer>
+
+    <button class="btn btn-primary back-to-top" type="button"><i class="bi bi-arrow-up"></i></button>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/theme-switcher.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/form-validation.js" defer></script>
+  </body>
+</html>
+

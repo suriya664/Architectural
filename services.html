@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Services | AV Studio</title>
+    <link rel="icon" href="assets/icons/favicon.ico">
+    <meta name="description" content="Explore architectural visualization services including 3D rendering, animation, and VR.">
+    <meta name="keywords" content="3D rendering, animation walkthroughs, VR, architectural visualization">
+    <meta property="og:title" content="AV Studio Services">
+    <meta property="og:description" content="Comprehensive visualization services for architecture and design.">
+    <meta property="og:image" content="images/services/service-1.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link id="bootstrapCss" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link id="rtlStylesheet" rel="stylesheet" href="css/style-rtl.css" disabled>
+    <link rel="stylesheet" href="css/dark-mode.css">
+    <link rel="stylesheet" href="css/responsive.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top nav-glass">
+      <div class="container">
+        <a class="navbar-brand nav__logo" href="index.html">AV Studio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="mainNav">
+          <ul class="navbar-nav mb-2 mb-lg-0 align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">Services</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="services.html">All Services</a></li>
+                <li><a class="dropdown-item" href="service-detail.html">3D Visualization</a></li>
+                <li><a class="dropdown-item" href="service-detail.html">Animation Walkthroughs</a></li>
+                <li><a class="dropdown-item" href="service-detail.html">VR Experiences</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="admin-dashboard.html">Dashboard</a></li>
+          </ul>
+          <div class="d-flex align-items-center gap-2 ms-lg-3">
+            <button id="langToggle" class="btn lang-toggle" type="button" aria-pressed="false">EN / AR</button>
+            <button id="themeToggle" class="btn theme-toggle" type="button" aria-pressed="false">
+              <i class="bi bi-moon-stars"></i>
+            </button>
+            <a class="btn btn-primary" href="login.html">Login</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header class="section-padding bg-surface mt-5">
+      <div class="container">
+        <h1>Our Services</h1>
+        <p class="text-muted-custom">Flexible service packages for every stage of design.</p>
+      </div>
+    </header>
+
+    <section class="section-padding">
+      <div class="container">
+        <div class="row g-3 align-items-center mb-4">
+          <div class="col-lg-6">
+            <div class="search-input">
+              <i class="bi bi-search"></i>
+              <input class="form-control" type="search" placeholder="Search services...">
+            </div>
+          </div>
+          <div class="col-lg-6 d-flex flex-wrap gap-2 justify-content-lg-end">
+            <button class="btn btn-outline filter-btn active" data-filter="*">All</button>
+            <button class="btn btn-outline filter-btn" data-filter=".rendering">3D Rendering</button>
+            <button class="btn btn-outline filter-btn" data-filter=".animation">Animation</button>
+            <button class="btn btn-outline filter-btn" data-filter=".vr">VR</button>
+            <div class="btn-group ms-lg-2" role="group">
+              <button class="btn btn-outline view-toggle active" data-view="grid"><i class="bi bi-grid-3x3-gap"></i></button>
+              <button class="btn btn-outline view-toggle" data-view="list"><i class="bi bi-list"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4 services-grid services-view" data-view="grid">
+          <div class="col-md-6 col-lg-4 grid-item rendering">
+            <div class="card-surface service-card h-100">
+              <div class="service-icon mb-3"><i class="bi bi-building"></i></div>
+              <h5>3D Architectural Visualization</h5>
+              <p class="text-muted-custom">Exterior and interior visuals with premium lighting.</p>
+              <a href="service-detail.html" class="btn btn-outline btn-sm">Learn More</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 grid-item rendering">
+            <div class="card-surface service-card h-100">
+              <div class="service-icon mb-3"><i class="bi bi-house-heart"></i></div>
+              <h5>Interior Design Rendering</h5>
+              <p class="text-muted-custom">Material and lighting detail for interiors.</p>
+              <a href="service-detail.html" class="btn btn-outline btn-sm">Learn More</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 grid-item rendering">
+            <div class="card-surface service-card h-100">
+              <div class="service-icon mb-3"><i class="bi bi-building-check"></i></div>
+              <h5>Exterior Rendering</h5>
+              <p class="text-muted-custom">Realistic exteriors for marketing materials.</p>
+              <a href="service-detail.html" class="btn btn-outline btn-sm">Learn More</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 grid-item vr">
+            <div class="card-surface service-card h-100">
+              <div class="service-icon mb-3"><i class="bi bi-arrow-repeat"></i></div>
+              <h5>360° Virtual Tours</h5>
+              <p class="text-muted-custom">Interactive tours across devices.</p>
+              <a href="service-detail.html" class="btn btn-outline btn-sm">Learn More</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 grid-item animation">
+            <div class="card-surface service-card h-100">
+              <div class="service-icon mb-3"><i class="bi bi-camera-reels"></i></div>
+              <h5>Animation Walkthroughs</h5>
+              <p class="text-muted-custom">Cinematic storytelling through motion.</p>
+              <a href="service-detail.html" class="btn btn-outline btn-sm">Learn More</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 grid-item vr">
+            <div class="card-surface service-card h-100">
+              <div class="service-icon mb-3"><i class="bi bi-vr"></i></div>
+              <h5>VR Experience Development</h5>
+              <p class="text-muted-custom">Immersive project walkthroughs in VR.</p>
+              <a href="service-detail.html" class="btn btn-outline btn-sm">Learn More</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 grid-item rendering">
+            <div class="card-surface service-card h-100">
+              <div class="service-icon mb-3"><i class="bi bi-layers"></i></div>
+              <h5>Post-Production Services</h5>
+              <p class="text-muted-custom">Compositing, grading, and enhancements.</p>
+              <a href="service-detail.html" class="btn btn-outline btn-sm">Learn More</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 grid-item rendering">
+            <div class="card-surface service-card h-100">
+              <div class="service-icon mb-3"><i class="bi bi-map"></i></div>
+              <h5>Floor Plan Creation</h5>
+              <p class="text-muted-custom">Clear floor plans for marketing and sales.</p>
+              <a href="service-detail.html" class="btn btn-outline btn-sm">Learn More</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 grid-item rendering">
+            <div class="card-surface service-card h-100">
+              <div class="service-icon mb-3"><i class="bi bi-box-seam"></i></div>
+              <h5>Product Visualization</h5>
+              <p class="text-muted-custom">High-end renders for product showcases.</p>
+              <a href="service-detail.html" class="btn btn-outline btn-sm">Learn More</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 grid-item rendering">
+            <div class="card-surface service-card h-100">
+              <div class="service-icon mb-3"><i class="bi bi-compass"></i></div>
+              <h5>Site Context Modeling</h5>
+              <p class="text-muted-custom">Accurate surroundings and landscape context.</p>
+              <a href="service-detail.html" class="btn btn-outline btn-sm">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-surface mt-5 p-4">
+          <h3>Service Comparison</h3>
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Service</th>
+                  <th>Best For</th>
+                  <th>Turnaround</th>
+                  <th>Revisions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>3D Visualization</td>
+                  <td>Marketing & approvals</td>
+                  <td>7-10 days</td>
+                  <td>2 rounds</td>
+                </tr>
+                <tr>
+                  <td>Animation</td>
+                  <td>Launch campaigns</td>
+                  <td>14-21 days</td>
+                  <td>3 rounds</td>
+                </tr>
+                <tr>
+                  <td>VR Tours</td>
+                  <td>Stakeholder engagement</td>
+                  <td>10-14 days</td>
+                  <td>2 rounds</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding bg-surface">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-6">
+            <h2>Why choose AV Studio?</h2>
+            <p class="text-muted-custom">Our process aligns with your project timelines, delivering reliable results with precision and artistry.</p>
+            <ul class="list-unstyled">
+              <li class="mb-2"><i class="bi bi-check-circle text-primary me-2"></i>Dedicated project manager</li>
+              <li class="mb-2"><i class="bi bi-check-circle text-primary me-2"></i>Real-time review portal</li>
+              <li class="mb-2"><i class="bi bi-check-circle text-primary me-2"></i>Flexible revision cycles</li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <img class="img-fluid rounded-4 shadow" src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80" alt="Services preview" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding">
+      <div class="container">
+        <div class="cta-banner text-center">
+          <h2 class="mb-3">Need a custom service package?</h2>
+          <p class="mb-4">Tell us about your project goals and timeline.</p>
+          <a href="contact.html" class="btn btn-light btn-lg">Request a Quote</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer section-padding">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-3">
+            <h4 class="footer__title">AV Studio</h4>
+            <p class="text-muted-custom">Premium architectural visualization services.</p>
+          </div>
+          <div class="col-lg-3">
+            <h5 class="footer__title">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <h5 class="footer__title">Services</h5>
+            <ul class="list-unstyled">
+              <li>3D Visualization</li>
+              <li>Animation Walkthroughs</li>
+              <li>Virtual Tours</li>
+              <li>VR Experiences</li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <h5 class="footer__title">Contact</h5>
+            <p class="text-muted-custom mb-1">hello@avstudio.com</p>
+            <p class="text-muted-custom mb-0">+1 (212) 555-2030</p>
+          </div>
+        </div>
+        <hr class="my-4">
+        <small class="text-muted-custom">© 2026 AV Studio. All rights reserved.</small>
+      </div>
+    </footer>
+
+    <button class="btn btn-primary back-to-top" type="button"><i class="bi bi-arrow-up"></i></button>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+    <script src="js/theme-switcher.js" defer></script>
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
+
