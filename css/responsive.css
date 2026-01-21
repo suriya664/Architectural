@@ -1,4 +1,14 @@
 @media (max-width: 991.98px) {
+  .navbar .navbar-collapse {
+    display: none !important;
+    width: 100%;
+    margin-top: var(--space-3);
+  }
+
+  .navbar .navbar-collapse.show {
+    display: block !important;
+  }
+
   .section-padding {
     padding: var(--space-16) 0;
   }
@@ -9,6 +19,70 @@
 
   .admin-sidebar {
     min-height: auto;
+  }
+
+  .navbar-collapse .navbar-nav {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .navbar-collapse .d-flex {
+    width: 100%;
+    justify-content: center;
+    margin-top: var(--space-3);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  li,
+  small,
+  .text-muted-custom {
+    text-align: center;
+  }
+
+  .card-surface,
+  .testimonial-card,
+  .stats-card,
+  .pricing-card,
+  .portfolio-item,
+  .service-card {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .admin-sidebar,
+  .admin-sidebar .nav {
+    text-align: center;
+  }
+
+  .row {
+    justify-content: center;
+  }
+
+  .btn,
+  .btn-group,
+  .d-flex.gap-2,
+  .d-flex.gap-3,
+  .d-flex.gap-4 {
+    justify-content: center;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .row .btn,
+  form .btn {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

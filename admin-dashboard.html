@@ -23,8 +23,17 @@
     <link rel="stylesheet" href="css/responsive.css">
   </head>
   <body>
+    <div class="d-lg-none p-3 border-bottom">
+      <div class="d-flex justify-content-start align-items-center gap-2">
+        <button class="btn btn-outline" type="button" data-bs-toggle="collapse" data-bs-target="#adminSidebar">
+          <i class="bi bi-list"></i>
+        </button>
+        <a class="nav__logo" href="index.html">AV Studio</a>
+      </div>
+    </div>
     <div class="d-flex">
-      <aside class="admin-sidebar p-4">
+      <div id="adminSidebar" class="collapse d-lg-block">
+        <aside class="admin-sidebar p-4">
         <h4 class="mb-4">AV Admin</h4>
         <nav class="nav flex-column gap-2">
           <a class="nav-link active" href="#">Dashboard</a>
@@ -36,7 +45,8 @@
           <a class="nav-link" href="#">Settings</a>
           <a class="nav-link text-danger" href="login.html">Logout</a>
         </nav>
-      </aside>
+        </aside>
+      </div>
       <main class="flex-grow-1 p-4">
         <div class="d-flex justify-content-between align-items-center mb-4">
           <h1>Dashboard</h1>
